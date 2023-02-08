@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\addopted.png" />
+    <None Remove="Image\all-pets.png" />
+    <None Remove="Image\all-users.png" />
+    <None Remove="Image\animal-care.png" />
+    <None Remove="Image\animal-start.jpg" />
+    <None Remove="Image\no-image.png" />
+    <None Remove="Image\shelter-100.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Windows\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\addopted.png" />
+    <Resource Include="Image\all-pets.png" />
+    <Resource Include="Image\all-users.png" />
+    <Resource Include="Image\animal-care.png" />
+    <Resource Include="Image\animal-start.jpg" />
+    <Resource Include="Image\no-image.png" />
+    <Resource Include="Image\shelter-100.png" />
+  </ItemGroup>
+
+</Project>

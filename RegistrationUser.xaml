@@ -1,0 +1,74 @@
+﻿<Window x:Class="projectApp.RegistrationUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projectApp"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="RegistrationUser" Height="775" Width="500">
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Width="300"
+                FontSize="40"
+                Margin="0,30,0,0"
+                TextAlignment="Center"
+                Text="Stwórz konto"/>
+            
+            <TextBlock
+                Width="300"
+                Margin="0,50,0,0"
+                Text="Podaj nazwę użytkownika"/>
+            <TextBox
+                    Style="{DynamicResource TextBox1}"
+                    x:Name="NewUserNameTextBox"/>
+
+            <TextBlock
+                Width="300"
+                Margin="0,30,0,0"
+                Text="Podaj imię"/>
+            <TextBox
+                    Style="{DynamicResource TextBox1}"
+                     x:Name="NewUserFirstNameTextBox"/>
+
+            <TextBlock
+                Width="300"
+                Margin="0,30,0,0"
+                Text="Podaj nazwisko"/>
+            <TextBox
+                    Style="{DynamicResource TextBox1}"
+                    x:Name="NewUserSurnameTextBox"/>
+
+            <TextBlock
+                Width="300"
+                Margin="0,30,0,0"
+                Text="Podaj e-maila"/>
+            <TextBox
+                    Style="{DynamicResource TextBox1}"
+                    x:Name="NewUserEmailTextBox"/>
+
+            <TextBlock
+                Width="300"
+                Margin="0,30,0,0"
+                Text="Podaj hasło"/>
+            <PasswordBox
+                Style="{DynamicResource PasswordStyle}"
+                x:Name="NewUserPasswordPassword"/>
+
+            <TextBlock
+                Width="300"
+                Margin="0,30,0,0"
+                Text="Powtórz hasło"/>
+            <PasswordBox
+                Style="{DynamicResource PasswordStyle}"
+                x:Name="NewUserPassword1Password"/>
+
+            <Button
+                Style="{StaticResource ButtonTemplate}"
+                Margin="0,30,0,0"
+                Content="Zarejestruj się" Click="Button_Click" />
+        </StackPanel>
+        
+    </Grid>
+</Window>
